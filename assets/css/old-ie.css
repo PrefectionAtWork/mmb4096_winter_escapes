@@ -449,7 +449,8 @@ html[xmlns] .clearfix {
             box-shadow: 0 2px 3px -2px #999999; }
           #wrapper #regions #regions-container .region-content .offer .offer-top {
             width: 100%;
-            display: inline-block; }
+            display: inline-block;
+            min-height: 4em; }
             #wrapper #regions #regions-container .region-content .offer .offer-top .title-info {
               float: left;
               display: inline-block;

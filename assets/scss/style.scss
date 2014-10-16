@@ -363,6 +363,7 @@ $ie: false !default;
 					.offer-top {
 						width: 100%;
 						display: inline-block;
+						min-height: $lineHeight * 4;
 					
 						.title-info {
 							float: left;
