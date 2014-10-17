@@ -37,7 +37,7 @@
 			<div class="arrow-down"></div>
 		</div>
 		<div class="uncollapse">
-			<p>Don’t let this year’s cold weather get you down—plan now to make your escape! The islands of the Caribbean are ready to provide a phenomenal refuge, and Mexico’s many resorts are waiting to welcome you this January and February as you make a break for the sun and sand. Our rates are dropping lower and faster than the temperature will be, with discounts on top of already reduced rates, making now the time to book.</p>
+			<p>Don’t let this year’s cold weather get you down—plan now to make your escape! Hot destinations are waiting to welcome you this December through February as you make a break for the sun and sand. Rates are dropping lower and faster than the temperature will be, with discounts on top of already reduced rates, making now the time to book.</p>
 			<h3>Booking Window: 10/17/14 – 11/6/14 &bull; Travel Window: 12/18/14 – 2/28/15</h3>
 		</div>
 	</div> <!-- #index-copy -->
@@ -67,7 +67,7 @@
 						<div class="offer">
 							<div>
 								<?php 
-									$imgName = preg_replace('/([a-zA-Z]{3})([a-zA-Z]{3})/', '$1_$2', $val3['code']);
+									$imgName = preg_replace('/([a-zA-Z]{3})([a-zA-Z]{3})/', '$1_$2', strtolower($val3['code']));
 								?>
 								<div class="offer-top">
 									<?php if ( empty($val3['landonly']) ) { ?>
@@ -117,11 +117,11 @@
 									?>
 									<div class="image<?php echo $imageClass; ?>">
 										<div class="image-container">
-											<a href="http://www.travimp.com/hotel.php?msg=<?php echo strtolower($val3['code']);?>">
+											<!--a href="http://www.travimp.com/hotel.php?msg=<?php echo strtolower($val3['code']);?>">
 												<div class="overlay">
 													<img src="<?php echo base_url(), 'assets/'.$assets_prefix.'img/link.png'; ?>">
 												</div>
-											</a>
+											</a-->
 											<img src="<?php echo base_url(), 'assets/'.$assets_prefix.'img/properties/'.$imgName.".jpg"; ?>">
 										</div>
 									</div>
@@ -162,7 +162,9 @@
 													?>		
 												</p>
 											<?php } ?>
-											
+											<!--
+												<a href="<?php echo "http://" . $_SERVER['SERVER_NAME'] . "/promo/mmb4028_dvf_hot_list/" . strtolower($val3['departurecode']);?>">See pricing for your gateway</a>
+											-->
 										<?php } ?>
 									</span>
 								</div>	<!-- .offer-bottom -->

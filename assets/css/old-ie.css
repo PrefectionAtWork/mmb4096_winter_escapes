@@ -131,7 +131,7 @@ html[xmlns] .clearfix {
   /* IE8 fallback colour */ }
 
 /** TI/MyAEV overrides **/
-#main {
+#page_content {
   overflow: visible; }
 
 /**  Microsite Styles **/
@@ -261,7 +261,6 @@ html[xmlns] .clearfix {
     position: relative;
     height: auto;
     padding: 0;
-    margin: -5px;
     width: 936px;
     -webkit-box-shadow: 0px 3px 4px #aaaaaa;
     -moz-box-shadow: 0px 3px 4px #aaaaaa;
@@ -269,7 +268,7 @@ html[xmlns] .clearfix {
     /* #AAAAAA */
     /* @import "responsiveslides";		// importing 'responsiveslides.scss' */ }
     #wrapper #promo-header img {
-      max-width: 941px; }
+      max-width: 936px; }
   #wrapper #index-copy {
     margin: 0 0;
     text-align: left;

@@ -9,7 +9,7 @@
 $ie: false !default;
 
 /** TI/MyAEV overrides **/
-#main {
+#page_content {
 	overflow: visible;
 }
 
@@ -140,14 +140,13 @@ $ie: false !default;
 		position: relative;
 		height: auto;
 		padding: 0;
-		margin: -5px;
 		width: 936px;
 		@include box-shadow ( 0px 3px 4px rgba(170, 170, 170, 1.0) ); /* #AAAAAA */
 
 		/* @import "responsiveslides";		// importing 'responsiveslides.scss' */
 		
 		img {
-			max-width: 941px;
+			max-width: 936px;
 		}
 	
 	}
